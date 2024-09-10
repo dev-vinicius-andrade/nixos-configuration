@@ -67,11 +67,16 @@
                 enable=true;
                 keys=[
                     {name="ssh"; fileName="ssh_id_ed25519"; private_key="private_keys/ssh"; public_key="public_keys/ssh";}
+                    {name="ssh_rsa"; fileName="id_rsa"; private_key="private_keys/ssh_rsa"; public_key="public_keys/ssh_rsa";}
                 ];
                 matchBlocks={
                     "github.com"={
                         hostname="github.com";
                         identityFile="~/.ssh/ssh_id_ed25519";
+                    };
+                    "hiperstream.visualstudio.com"={
+                        hostname="hiperstream.visualstudio.com";
+                        identityFile="~/.ssh/ssh_rsa";
                     };
                 };
             };
