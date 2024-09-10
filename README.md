@@ -338,7 +338,7 @@ In my case:
 ```bash
 nix-shell -p git --run "\
 sudo rm -Rf /etc/nixos && \
-sudo ln -snf /mnt/f/repos/github/dev-vinicius-andrade/nix-configuration /etc/nixos && \
+sudo ln -snf /mnt/e/repos/github/dev-vinicius-andrade/nixos-configuration /etc/nixos && \
 sudo nixos-rebuild switch --flake /etc/nixos/nix#wsl" && \
 sudo reboot
 ```

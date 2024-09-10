@@ -34,6 +34,7 @@
                 sops="passwords/users/dev-vinicius-andrade";
             };
             defaultShell = "zsh";
+            defaultTerminal="alacritty";
             dot_files = {
                 enable = true;
                 path = "/mnt/f/repos/github/dev-vinicius-andrade/dotfiles";
