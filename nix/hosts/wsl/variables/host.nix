@@ -37,7 +37,7 @@
             defaultTerminal="alacritty";
             dot_files = {
                 enable = true;
-                path = "/mnt/f/repos/github/dev-vinicius-andrade/dotfiles";
+                path = "/mnt/e/repos/github/dev-vinicius-andrade/dotfiles";
             };
             ignoreShellProgramCheck = true;
             packages = [
