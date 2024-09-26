@@ -1,7 +1,7 @@
 {
     sops={
         enable=true;
-        secrets_file="/secrets/host/common/secrets.yaml";
+        secrets_file="/secrets/common/secrets.yaml";
         age={
             sshKeyPaths=[ "/etc/ssh/ssh_id_ed25519" ];
         };
