@@ -40,6 +40,7 @@
                 sops="passwords/users/dev-vinicius-andrade";
             };
             defaultShell = "zsh";
+            defaultTerminal="alacritty";
             dot_files = {
                 enable = true;
                 git= {
