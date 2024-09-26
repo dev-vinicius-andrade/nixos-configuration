@@ -62,6 +62,18 @@
             ./hosts/nixos-home-server/configuration.nix          
           ];
         };
+        games-home-server = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs flake_file_path;};
+          system = example_vars.system;
+          modules = [
+            disko.nixosModules.disko
+            inputs.home-manager.nixosModules.default
+            home-manager.nixosModules.home-manager   
+            ./disko/default/disko.nix
+            ./hosts/games-home-server/hardware-configuration.nix
+            ./hosts/games-home-server/configuration.nix          
+          ];
+        };
         personal = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs flake_file_path;};
           system = example_vars.system;
