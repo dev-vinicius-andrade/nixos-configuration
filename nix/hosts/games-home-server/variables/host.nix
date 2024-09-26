@@ -1,7 +1,7 @@
 {
     sops={
         enable=true;
-        secrets_file="/secrets/host/wsl/secrets.yaml";
+        secrets_file="/secrets/host/common/secrets.yaml";
         age={
             sshKeyPaths=[ "/etc/ssh/ssh_id_ed25519" ];
         };
@@ -44,7 +44,7 @@
                 enable = true;
                 git= {
                     ref="main";
-                    commit_id="08b227c15bc29ccfc191d79fc089b160aa759743";
+                    commit_id="20b29200fabe2f226d679cb8f0250b8c5578c2b5";
                     ssh= {
                         enable=true;
                         url="git@github.com:dev-vinicius-andrade/dotfiles.git";
