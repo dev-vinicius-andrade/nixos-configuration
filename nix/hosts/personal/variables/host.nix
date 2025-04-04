@@ -37,10 +37,10 @@
             enable = false;
         };
         hyprland = {
-          enable = false;
+          enable = true;
         };
         gnome={
-          enable=true;
+          enable=false;
         };
         ssh = {
             enable = true;
@@ -65,7 +65,7 @@
                 enable = true;
                 git= {
                     ref="main";
-                    commit_id="08b227c15bc29ccfc191d79fc089b160aa759743";
+                    commit_id="c0ff8ad3d375577ca97f80fba7d2a0eb4ff04f44";
                     ssh= {
                         enable=true;
                         url="git@github.com:dev-vinicius-andrade/dotfiles.git";
