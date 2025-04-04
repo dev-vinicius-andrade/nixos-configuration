@@ -8,6 +8,7 @@ in
     imports = [
         (import (flake_file_path + "/configurations/common/configuration.nix") {common_vars = common_vars; host_vars=host_vars;})
         (import (flake_file_path + "/modules/system/gnome.nix") {common_vars = common_vars; host_vars=host_vars;})
+        (import (flake_file_path + "/modules/system/hyprland.nix") {common_vars = common_vars; host_vars=host_vars;})
 
     ];
     security.rtkit.enable = true;
@@ -19,13 +20,8 @@ in
       jack.enable=true;
     };
     nixpkgs.config.allowUnfree = true;
-    # programs.hyprland = {
-    #   enable = true;
-    #   xwayland.enable = true;
-    # };
     environment.sessionVariables = {
 
-      # NIXOS_OZONE_WL = "1";
     };
     boot.kernelParams =  [ 
       "nvidia.NVreg_PreserveVideoMemoryAllocations=1" 
